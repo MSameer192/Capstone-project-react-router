@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function PricingSec() {
   return (
-    <section className="container-fluid mt-5 pt-5" id="pricing-container">
+    <section className="container-fluid pt-5" id="pricing-container">
     <div className="container mt-5 pb-5">
       <div className="features-content-container text-center mb-5">
         <p className="sub-heading">

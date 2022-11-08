@@ -1,11 +1,18 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
+
 
 
 export default function Navbar() {
+
+    const navigate = useNavigate();
+
+    const goToPrice = () => {
+        navigate('/pricing')
+    }
+
+
     return (
-
-
         <nav className="navbar navbar-expand-lg bg-white" id="navbar-main-container">
 
             <div className="container scroller" id="navbar-container">
@@ -39,7 +46,7 @@ export default function Navbar() {
                             </Link>
                             <ul className="dropdown-menu">
                                 <li><Link className="dropdown-item" to="/">Action1</Link></li>
-                                <li><Link className="dropdown-item" to="/">Another2</Link></li>
+                                <li><button className="dropdown-item" onClick={goToPrice} >Go to Pricing</button></li>
                                 <li>
                                     <hr className="dropdown-divider" />
                                 </li>
