@@ -35,16 +35,15 @@ function App() {
         <BrowserRouter>
           <div className="container-fluid" id="master-container">
           <Wrapper>
-            <Routes>
-              <Route path="/" element={<MainHeader />}>
-                <Route index element={<Home />} />
-                <Route path="/services" element={<Services />} />
-                <Route path="/features" element={<Feature />} />
-                <Route path="/pricing" element={<PricingSec />} />
-                <Route path="/quesans" element={<FAQ />} />
-              </Route>
-            </Routes>
-            {/* <ScrollRestoration /> */}
+              <Routes>
+                <Route path="/" element={<MainHeader />}>
+                  <Route index element={<Home />} />
+                  <Route path="/services" element={<Services />} />
+                  <Route path="/features" element={<Feature />} />
+                  <Route path="/pricing" element={<PricingSec />} />
+                  <Route path="/quesans" element={<FAQ />} />
+                </Route>
+              </Routes>
             </Wrapper>
           </div>
         </BrowserRouter>
