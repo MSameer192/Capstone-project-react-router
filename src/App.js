@@ -5,14 +5,14 @@ import PricingSec from "./components/PricingSec";
 import Services from "./components/Services";
 import Home from "./components/Home";
 import MainHeader from "./components/MainHeader";
-import { useLayoutEffect } from 'react'
+// import { useLayoutEffect } from 'react'
 
 
 import {
   BrowserRouter,
   Route,
   Routes,
-  useLocation
+  // useLocation
 } from 'react-router-dom'
 
 
@@ -20,13 +20,13 @@ function App() {
 
 
 
-  const Wrapper = ({ children }) => {
-    const location = useLocation()
-    useLayoutEffect(() => {
-      document.documentElement.scrollTo(0, 0)
-    }, [location.pathname])
-    return children
-  }
+  // const Wrapper = ({ children }) => {
+  //   const location = useLocation()
+  //   useLayoutEffect(() => {
+  //     document.documentElement.scrollTo(0, 0)
+  //   }, [location.pathname])
+  //   return children
+  // }
 
   
 
@@ -34,7 +34,7 @@ function App() {
     <>
         <BrowserRouter>
           <div className="container-fluid" id="master-container">
-          <Wrapper>
+          {/* <Wrapper> */}
               <Routes>
                 <Route path="/" element={<MainHeader />}>
                   <Route index element={<Home />} />
@@ -44,7 +44,7 @@ function App() {
                   <Route path="/quesans" element={<FAQ />} />
                 </Route>
               </Routes>
-            </Wrapper>
+            {/* </Wrapper> */}
           </div>
         </BrowserRouter>
     </>

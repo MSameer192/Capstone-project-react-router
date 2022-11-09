@@ -5,12 +5,19 @@ import { Link, useNavigate } from 'react-router-dom';
 
 export default function Navbar() {
 
+
+    
     const navigate = useNavigate();
 
     const goToPrice = () => {
         navigate('/pricing')
     }
 
+
+    
+    function goToTop() {
+        window.scroll(0,0);
+    }
 
     return (
         <nav className="navbar navbar-expand-lg bg-white" id="navbar-main-container">
@@ -25,19 +32,19 @@ export default function Navbar() {
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li className="nav-item">
-                            <Link className="nav-link active fw-bold me-3" aria-current="page" to="/">HOME</Link>
+                            <Link className="nav-link active fw-bold me-3" aria-current="page" to="/" onClick={goToTop}>HOME</Link>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link active fw-bold me-3" to="/services">SERVICES</Link>
+                            <Link className="nav-link active fw-bold me-3" to="/services" onClick={goToTop}>SERVICES</Link>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link active fw-bold me-3" to="/features">FEATURE</Link>
+                            <Link className="nav-link active fw-bold me-3" to="/features" onClick={goToTop}>FEATURE</Link>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link active fw-bold me-3" to="/pricing">PRICE</Link>
+                            <Link className="nav-link active fw-bold me-3" to="/pricing" onClick={goToTop}>PRICE</Link>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link active fw-bold me-3" to="/quesans">FAQ</Link>
+                            <Link className="nav-link active fw-bold me-3" to="/quesans" onClick={goToTop}>FAQ</Link>
                         </li>
                         <li className="nav-item dropdown">
                             <Link className="nav-link dropdown-toggle active  fw-bold" to="/" role="button" data-bs-toggle="dropdown"
