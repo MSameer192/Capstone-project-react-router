@@ -291,7 +291,7 @@ body {
 .myfeatures {
   background-color: #f9f9ff;
   background-clip: padding-box;
-  border: 10px solid white;
+  border: 10px  solid white;
   color: black;
 }
 

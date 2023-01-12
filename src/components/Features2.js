@@ -18,7 +18,7 @@ export default function Features2() {
 
             
 
-                <div className="owl-carousel my-padding container mt-5">
+                <div className="owl-carousel container mt-5">
                     <div className="item">
                         <img
                             src="./images/yokeparty.webp"

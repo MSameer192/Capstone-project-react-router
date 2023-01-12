@@ -1,4 +1,5 @@
 import React from 'react';
+import Counter from "./Counter";
 
 export default function FAQ() {
     return (
@@ -23,7 +24,8 @@ export default function FAQ() {
                         <div className="QA-left-container ps-5 pt-3 col-md-3 text-end lh-1">
                             <div className="numbers-container">
                                 <p id='0101' className="number-hading">
-                                    12989
+                                    {/* 12989 */}
+                                    <Counter number={11450}/>
                                 </p>
                                 <p className="numbers-text">
                                     Projects Completed
@@ -32,7 +34,7 @@ export default function FAQ() {
 
                             <div className="numbers-container pt-3">
                                 <p id='0102' className="number-hading">
-                                    9050
+                                <Counter number={8590}/>
                                 </p>
                                 <p className="numbers-text">
                                     New Projects
@@ -41,7 +43,7 @@ export default function FAQ() {
 
                             <div className="numbers-container pt-3">
                                 <p id='0103' className="number-hading">
-                                    6023
+                                <Counter number={3850}/>
                                 </p>
                                 <p className="numbers-text">
                                     Tickets Submitted
@@ -51,7 +53,7 @@ export default function FAQ() {
 
                             <div className="numbers-container pt-3">
                                 <p id='0104' className="number-hading">
-                                    998
+                                <Counter number={999}/>
                                 </p>
                                 <p className="numbers-text">
                                     Cup of Coffee
